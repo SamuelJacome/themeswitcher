@@ -13,10 +13,11 @@ function App() {
 
   const toggleTheme  = () =>{
     setTheme(theme.title === 'light' ? dark : light);
-  }
+  };
+
   return (
     <div className="App">
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header toggleTheme = {toggleTheme}/>
       </ThemeProvider>
